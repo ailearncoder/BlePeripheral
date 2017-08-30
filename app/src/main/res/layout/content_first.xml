@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pxs.bleperipheral.FirstActivity"
+    tools:showIn="@layout/activity_first">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="330dp"
+        android:layout_height="49dp" android:layout_marginLeft="8dp" android:layout_marginRight="0dp" android:text="开始广播" app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textView" app:layout_constraintRight_toRightOf="@+id/link_state" tools:layout_editor_absoluteY="16dp"
+    android:onClick="advClick"
+    />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="信息提示：" tools:layout_editor_absoluteX="7dp" tools:layout_editor_absoluteY="77dp"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="info" tools:layout_editor_absoluteX="7dp" tools:layout_editor_absoluteY="108dp"/>
+    <TextView
+        android:id="@+id/link_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="未连接" tools:layout_editor_absoluteX="88dp" tools:layout_editor_absoluteY="77dp"/>
+</android.support.constraint.ConstraintLayout>
